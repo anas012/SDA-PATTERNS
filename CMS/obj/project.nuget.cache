@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bee9rOqYGK1f14fl7oPy65LejfnHrNxA7Ut0cJ3a3Ludu74BV5T2r4ilIh6k/eA+Dq1fzYVvlnEArKXu5QLt/w==",
+  "dgSpecHash": "FPF5NPa0jTsImwUCsP/WzU7Dv7J6aTMk5uttHSV0+sxPEmZaf34CozelFxrUJYOxEd4lJrsg5K/8pm6V3GPQZg==",
   "success": true,
-  "projectFilePath": "F:\\CMS\\CMS\\CMS.csproj",
+  "projectFilePath": "F:\\sda patterns\\SDA-PATTERNS\\CMS\\CMS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anas Ahmed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Anas Ahmed\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

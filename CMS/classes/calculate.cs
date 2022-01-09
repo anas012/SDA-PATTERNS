@@ -15,7 +15,7 @@ namespace CMS.classes
         {
             if (identity == "student")
             {
-                cgpa = "3.3";
+                cgpa = "3.1";
                 return cgpa;
             }
             else
