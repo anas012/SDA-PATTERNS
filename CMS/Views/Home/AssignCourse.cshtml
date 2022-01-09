@@ -1,0 +1,71 @@
+﻿@using CMS.Models;
+
+
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/jquery/dist/jquery.min.js" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="card">
+                <form method="post" action="/home/AssignCourse">
+                    <p class="card-header">
+                        Assign course
+                    </p>
+                    <div class="card-body">
+                        <div class="col-auto my-1">
+
+                            <label class="form-label">Student Name <span class="text-danger">*</span></label>
+                            <select class="custom-select mr-sm-2" name="Name" id="inlineFormCustomSelect">
+                                @{ foreach (var data in Model)
+                                    {
+
+                                        <option name="Name" value=@data.Name>@data.Name</option>
+                                    }
+                                }
+
+
+                            </select>
+                        </div>
+                        <div class="col-auto my-1">
+
+                            <label class="form-label">Student Email <span class="text-danger">*</span></label>
+                            <select class="custom-select mr-sm-2" name="Email" id="inlineFormCustomSelect">
+                                @{ foreach (var data in Model)
+                                    {
+
+                                        <option name="Email" value=@data.Email>@data.Email</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div class="col-auto my-1">
+
+                            <label class="form-label">Courses <span class="text-danger">*</span></label>
+                            <select class="custom-select mr-sm-2" name="Subject" id="inlineFormCustomSelect">
+                                <option selected>choose</option>
+                                <option value="Maths">Maths</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Science">Science</option>
+                                <option value="Computer">Computer</option>
+                            </select>
+                        </div>
+                        <br />
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary">Assigned Course</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    </body>
+</html>

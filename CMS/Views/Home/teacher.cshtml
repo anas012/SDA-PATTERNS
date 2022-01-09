@@ -1,0 +1,62 @@
+﻿@using CMS.Models;
+<html>
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/jquery/dist/jquery.min.js" />
+</head>
+<body>
+    @*<p> @TempData["data"]</p>*@
+
+
+    <div class="containerfluid">
+        <div class=" d-flex justify-content-end">
+            <a class="btn btn-success mr-5" href="/home/AssignCourse">AssignCourse </a>
+
+            <a class="btn btn-primary" href="/home/Addstudent">Add new student</a>
+        </div>
+
+    </div>
+    <div class="d-flex justify-content-center">
+        <p><strong>List Of Students</strong></p>
+    </div>
+    <table class="table table-bordered table-striped m-auto h-auto w-auto">
+        <tr>
+            <th>Student Name</th>
+            <th>Student Email</th>
+
+            <th>Delete</th>
+
+        </tr>
+        @{
+            foreach (var abc in Model)
+            {
+                <tr>
+                    <td>@abc.Name</td>
+                    <td>@abc.Email</td>
+
+
+
+
+                    <td>
+                        <a class="btn btn-danger" href="/home/delete?num=@abc.Id">Delete </a>
+                    </td>
+                </tr>
+
+            }
+        }
+        <div>
+            <p><strong>Welcome @TempData["data"]</strong></p>
+        </div>
+        <div>
+            <p><strong>Total Records @TempData["data1"]</strong></p>
+        </div>
+        <div>
+
+            <p><strong>Current salary  @TempData["val"]</strong></p>
+        </div>
+
+    </table>
+
+</body>
+</html>
